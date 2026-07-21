@@ -49,13 +49,9 @@ cp .env.example .env
 
 ## Usage
 
-### Step 1: Create a Memory Resource
+### Step 1: Create a Memory Resource via Console
 
-```bash
-python create_memory.py
-```
-
-This creates a memory resource with the semantic strategy and waits for it to become ACTIVE. Copy the Memory ID from the output and add it to your `.env` file.
+Navigate to **Amazon Bedrock AgentCore > Memory** in the AWS Console and create a memory resource with the Semantic strategy. Copy the Memory ID and add it to your `.env` file.
 
 ### Step 2: Write Conversation Events
 
@@ -80,7 +76,6 @@ This waits for long-term memory extraction and then demonstrates listing records
 ├── .env.example          # Template for environment variables
 ├── .gitignore
 ├── requirements.txt      # Python dependencies
-├── create_memory.py      # Creates a memory resource
 ├── write_events.py       # Writes conversation events to memory
 ├── retrieve_memory.py    # Retrieves long-term memory records
 ├── LICENSE
